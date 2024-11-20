@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1 class="main__h1">Cotizador de Fotografía</h1>
+
+        <h2 class="main__h2">Una guia para aprender a sacar tus presupuestos</h2>
+
+        <p class="main__p">Con más de 10 años en fotografía profesional, creé esta herramienta para ayudar a calcular precios de forma sencilla.</p>
+        <section id="cotizador" class="section">
+            <div class="section__div">
+
+                <h3 class="section__div__h3">Define la categoría de tu servicio</h3>
+
+                <p class="section__div__p">Seas especialista, generalista o novato, esta herramienta es útil incluso si solo realizas trabajos complementarios en fotografía.</p>
+                <p class="section__div__p">Selecciona un nivel intermedio del servicio que ofreces. No estamos hablando de tu nivel general, sino de tu experiencia específica en esta área.</p>
+
+                <form action="" class="section__div__form">
+                    <legend>Nivel</legend>
+                    <select name="level" id="level" class="section__div__form">
+                        <option value="5">especialista</option>
+                        <option value="4">experimentado</option>
+                        <option value="3">con experiencia</option>
+                        <option value="2">poca experiencia</option>
+                        <option value="1">sin experiencia</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="section__div">
+                <h3 class="section__div__h3">¿Cuánto necesitas para tu estilo de vida?</h3>
+
+                <p class="section__div__p">Si este trabajo es parte de tus actividades principales o secundarias y afecta tu economía mensual, calcula cuánto necesitas ganar como mínimo cada mes. Algunos trabajos o clientes podrían no ser rentables en relación al tiempo y esfuerzo que requieren, dependiendo de tus metas económicas.</p>
+                <p class="section__div__p">Si el trabajo es excepcional o para llenar huecos de agenda, puedes establecer un precio más bajo.</p>
+                <p class="section__div__p">Esta aplicación web es solo de frontend: todo el código se ejecuta en tu navegador y no guarda ni envía tus datos.</p>
+
+                <form action=""  class="section__div__form">
+                    <legend>Ganancia miníma mensual esperada</legend>
+                    <input type="number">
+                </form>
+            </div>
+
+            <div  class="section__div">
+                <h3 class="section__div__h3">Si solo hicieras este tipo de servicio, ¿cuántos podrías realizar al mes?</h3>
+                <p class="section__div__p">
+                    Calcula cuántos servicios puedes ofrecer al mes, teniendo en cuenta la temporada y el tiempo que dedicas a tareas como ventas y publicidad.</p>
+                <p class="section__div__p">Si tienes poca experiencia o equipo limitado, deberás hacer más producciones para compensar.</p>
+
+                <span  class="section__div__span">Recuerda considerar:</span>
+                <ul  class="section__div__ul">
+                    <li>Tiempo de cobertura</li>
+                    <li>Tiempo de preproducción</li>
+                    <li>Tiempo de postproducción</li>
+                    <li>Tiempo dedicado a marketing y publicidad para mantener el flujo de clientes</li>
+                    <li>Tiempo invertido en ventas</li>
+                </ul>
+
+                <form action=""  class="section__div__form">
+                    <legend>Cantidad de producciones mensuales</legend>
+                    <label for="cantidad">
+                        <input type="number" placeholder="Ingresa un número" min="0" id="cantidad" name="cantidad">
+                    </label>
+                </form>
+            </div>
+            
+            <div class="section__div">
+                <h3 class="section__div__h3">Gastos</h3>
+
+                <p class="section__div__p">Todo negocio tiene gastos: vehículo, estudio, seguros e impuestos son algunos de los principales.</p>
+                <p  class="section__div__p">Algunos impuestos, como el IVA, se pueden agregar al precio final, pero otros, como ingresos brutos o el impuesto al vehículo, debes cubrirlos.</p>
+                <p class="section__div__p">Identifica los gastos que debes amortizar, ya que no forman parte de tus ganancias.</p>
+
+                <form action=""  class="section__div__form">
+                    <legend>Gastos Mensuales</legend>
+                    <fieldset>
+                        <label for="impuestos">Ingresa un monto representativo de tus impuestos mensuales:
+                            <input type="number" name="impuestos" id="impuestos" placeholder="Ejemplo: 5000" min="0">
+                        </label>
+                        
+                        <label for="servicios">Servicios (Internet, celular, agua, etc.):
+                            <input type="number" name="servicios" id="servicios" placeholder="Ejemplo: 2000" min="0">
+                        </label>
+                        
+                        <label for="seguros">Seguros:
+                            <input type="number" id="seguros" name="seguros" placeholder="Ejemplo: 1000" min="0">
+                        </label>
+                        
+                        <label for="alquiler">Alquiler o renta:
+                            <input type="number" id="alquiler" name="alquiler" placeholder="Ejemplo: 15000" min="0">
+                        </label><br>
+                        
+                        <label for="otros">Otros gastos:
+                            <input type="number" id="otros" name="otros" placeholder="Ejemplo: 3000" min="0">
+                        </label>
+                    </fieldset>
+                    
+                </form>
+            </div>
+            
+            <div  class="section__div">
+                <h3  class="section__div__h3">Fondo para equipos</h3>
+
+                <p class="section__div__p">Los equipos se desgastan y pueden dañarse, por lo que es crucial estimar su valor para poder amortizarlos adecuadamente.</p>
+                <p class="section__div__p">Este fondo tiene como objetivo cubrir reparaciones, reemplazos por desgaste o daño, actualizaciones de equipos y, en caso de robo, permitirte reemplazarlos.</p>
+
+                <span class="section__div__span">¿En cuánto tiempo deseas amortizarlos para un recambio total? (Sugerido: 3 años)</span>
+                <form action=""  class="section__div__form">
+                    <fieldset>
+                        <legend>Fondo para Equipos</legend>
+                        <section>
+                            <label for="tiempo-amortizacion">Tiempo de amortización:
+                                <select id="tiempo-amortizacion" name="tiempo-amortizacion">
+                                    <option value="1">1 año</option>
+                                    <option value="2">2 años</option>
+                                    <option value="3">3 años</option>
+                                    <option value="4">4 años</option>
+                                    <option value="5">5 años</option>
+                                </select>
+                            </section>
+                            </label>
+    
+                        <label for="fondo" >¿Cuánto necesitas juntar para el reemplazo?
+                            <input type="number" id="fondo" name="fondo" placeholder="Ejemplo: 15000" min="0">
+                        </label>
+                    </fieldset>
+        
+                </form>
+            </div>
+            <div  class="section__div">
+                <span class="resultado"  class="section__div__span"></span>
+
+                <p  class="section__div__p">Simulas que el trabajo es tu actividad principal, calculas los ingresos anuales, sumas los gastos y divides por la cantidad de trabajos previstos.</p>
+                <p  class="section__div__p">Compara tu precio con el de mercado. Si tienes renombre, puedes cobrar más. Si la demanda es baja o la competencia es alta, ajusta tu estrategia, ya sea reduciendo costos, aumentando trabajo o cambiando el enfoque.</p>
+            </div>
+        </section>
+
+        <section id="fotoproducto"  class="section">
+            <h2  class="section__div__h2">Fotoproducto</h2>
+
+            <p  class="section__div__p">La fotografía de producto es difícil de cotizar, cada producto tiene sus particularidades: tamaño, brillo, reflejos, transparencias, entre otros. Este formulario te ayudará a organizar los parámetros necesarios.</p>
+        
+            <form  class="section__div__form">
+                <!-- Tiempo -->
+                <label for="tiempo" >
+                    ¿Cuánto tiempo tardas para tres fotos de catálogo sin características especiales (incluyendo retoque)? 
+                    <input type="range" id="tiempo" name="tiempo" min="15" max="120" value="60">
+                    <span id="tiempo-valor">60 minutos</span>
+                </label>
+        
+                <!-- Tipo de fotografía -->
+                <fieldset">
+                    <legend>Selecciona un tipo de fotografía</legend>
+                    <select name="tipo" id="tipo">
+                        <option value="1">Catálogo Express</option>
+                        <option value="2">Catálogo</option>
+                        <option value="3">Catálogo Publicitario</option>
+                        <option value="4">Catálogo Ambientado</option>
+                        <option value="5">Catálogo de Grandes Escenas</option>
+                        <option value="6">Lookbook</option>
+                        <option value="7">Foto Publicitaria</option>
+                    </select>
+                </fieldset>
+        
+                <!-- Características del producto -->
+                <fieldset>
+                    <legend>Características del producto</legend>
+                    <label>
+                        <input type="checkbox" name="caracteristicas[]" value="brillo">
+                        ¿Tiene brillo?
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="caracteristicas[]" value="transparencias">
+                        ¿Tiene transparencias?
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="caracteristicas[]" value="reflejos">
+                        ¿Tiene reflejos?
+                    </label>
+                </fieldset>
+        
+                <!-- Tamaño -->
+                <fieldset>
+                    <legend>¿Qué tan grande es el producto?</legend>
+                    <label>
+                        <input type="radio" name="tamano" value="muy_pequeno">
+                        Muy pequeño (anillo)
+                    </label><br>
+                    <label>
+                        <input type="radio" name="tamano" value="normal">
+                        Normal (desde un sacapuntas a una licuadora)
+                    </label><br>
+                    <label>
+                        <input type="radio" name="tamano" value="grande">
+                        Grande (mochila)
+                    </label><br>
+                    <label>
+                        <input type="radio" name="tamano" value="muy_grande">
+                        Muy grande (televisor)
+                    </label>
+                </fieldset>
+        
+                <!-- Posiciones -->
+                <fieldset>
+                    <legend>¿Requiere posiciones difíciles?</legend>
+                    <label>
+                        <input type="radio" name="posicion" value="no">
+                        No
+                    </label><br>
+                    <label>
+                        <input type="radio" name="posicion" value="ayuda">
+                        Algo para ayudarlo a quedarse parado
+                    </label><br>
+                    <label>
+                        <input type="radio" name="posicion" value="colgar">
+                        Colgarlo con tanzas
+                    </label>
+                </fieldset>
+        
+                <!-- Cantidad de planos -->
+                <fieldset>
+                    <legend>¿Cuántos planos por producto?</legend>
+                    <label>
+                        <input type="radio" name="planos" value="1-3">
+                        1 a 3
+                    </label><br>
+                    <label>
+                        <input type="radio" name="planos" value="4-6">
+                        4 a 6
+                    </label><br>
+                    <label>
+                        <input type="radio" name="planos" value="6-9">
+                        6 a 9
+                    </label><br>
+                    <label>
+                        <input type="radio" name="planos" value="10+">
+                        10 o más
+                    </label>
+                </fieldset>
+        
+                <!-- Variantes -->
+                <fieldset>
+                    <legend>Fotos adicionales por variante de color</legend>
+                    <label>
+                        <input type="radio" name="variantes" value="1-3">
+                        1 a 3
+                    </label><br>
+                    <label>
+                        <input type="radio" name="variantes" value="4-6">
+                        4 a 6
+                    </label><br>
+                    <label>
+                        <input type="radio" name="variantes" value="6-9">
+                        6 a 9
+                    </label><br>
+                    <label>
+                        <input type="radio" name="variantes" value="10-12">
+                        10 a 12
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+        
+    </main>
+    <footer></footer>
+    <script src="./code.js"></script>
+</body>
+</html>

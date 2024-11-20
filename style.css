@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&family=Tienne:wght@400;700;900&display=swap');
+
+:root{
+    --color-claro: #eef2fb;
+    --color-resalte: #A2BBF6;
+    --color-medio: #5A86E9;
+    --color-fuerte: #1E55D4;
+    --color-oscuro: #0E3EAA;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-oscuro);
+}
+
+html {
+    font-family: "Spline Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--color-claro);
+    font-size: 14px;
+}
+
+main {
+    margin: 20px;
+}
+
+h1, h3 {
+    font-family: "Tienne", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+    color: var(--color-oscuro);
+}
+
+.main__h1 {
+    font-size: 4em;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.main__h2 {
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-align: center;
+    color: #1E55D4;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main__p {
+    text-align: center;
+    margin: 20px 45px 40px 45px;
+    color: var(--color-oscuro);
+}
+
+.section {
+    border: #1E55D4 3px solid;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.section__div{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.section__div__h3 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px;
+    text-decoration: underline;
+    color: var(--color-fuerte);
+}
+
+.section__div__p {
+    margin-top: 20px auto;
+}
+
+.section__div__form {
+    background-color: var(--color-fuerte);
+    color: var(--color-claro);
+    padding: 15px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin: 10px;
+}
+
+.section__div__form  legend, span, label {
+    color: var(--color-claro);
+}
+
+.section__div__form > fieldset {
+    border: none;
+}
+
+.section__div__form legend {
+    font-family: "Tienne", serif;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 4;
+    font-size: 1.3em;
+}
+
+.section__div__form label {
+    line-height: 2;
+}
+
