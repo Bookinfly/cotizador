@@ -37,6 +37,11 @@ h1, h3 {
     color: var(--color-oscuro);
 }
 
+option {
+    color: var(--color-claro);
+    background-color: var(--color-fuerte);
+}
+
 .main__h1 {
     font-size: 4em;
     font-weight: lighter;
@@ -72,7 +77,7 @@ h1, h3 {
 }
 
 .section__div{
-    padding: 20px;
+    padding: 10px 20px;
     margin: 10px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -91,6 +96,7 @@ h1, h3 {
 
 .section__div__p {
     margin-top: 20px auto;
+    text-align: center;
 }
 
 .section__div__form {
@@ -109,19 +115,41 @@ h1, h3 {
     color: var(--color-claro);
 }
 
-.section__div__form > fieldset {
+.section__div__form fieldset {
     border: none;
+    background-color: var(--color-fuerte);
 }
 
 .section__div__form legend {
     font-family: "Tienne", serif;
     font-weight: bold;
     font-style: normal;
-    line-height: 4;
+    line-height: 3;
     font-size: 1.3em;
 }
 
 .section__div__form label {
     line-height: 2;
+    padding-left: 5px;
 }
 
+.section__div--res{
+    display: none;
+}
+
+.section__h2{
+    font-size: 1.8em;
+    font-family: "Tienne", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+    color: var(--color-oscuro);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section__p {
+    text-align: center;
+    color: var(--color-oscuro);
+}

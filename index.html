@@ -23,14 +23,18 @@
                 <p class="section__div__p">Selecciona un nivel intermedio del servicio que ofreces. No estamos hablando de tu nivel general, sino de tu experiencia específica en esta área.</p>
 
                 <form action="" class="section__div__form">
-                    <legend>Nivel</legend>
-                    <select name="level" id="level" class="section__div__form">
-                        <option value="5">especialista</option>
-                        <option value="4">experimentado</option>
-                        <option value="3">con experiencia</option>
-                        <option value="2">poca experiencia</option>
-                        <option value="1">sin experiencia</option>
-                    </select>
+
+                    <fieldset><!--el fondo esta dif en los option-->
+                        <legend>Nivel</legend>
+                        <select name="level" id="level" class="section__div__form lvl">
+                            <option value="5">especialista</option>
+                            <option value="4">experimentado</option>
+                            <option value="3">con experiencia</option>
+                            <option value="2">poca experiencia</option>
+                            <option value="1">sin experiencia</option>
+                        </select>
+                    </fieldset>
+
                 </form>
             </div>
 
@@ -43,7 +47,9 @@
 
                 <form action=""  class="section__div__form">
                     <legend>Ganancia miníma mensual esperada</legend>
-                    <input type="number">
+                    <label for="min">Ganancia mensual: <br>
+                        <input type="number" placeholder="Ingresa un número" name="min" id="min">
+                    </label>
                 </form>
             </div>
 
@@ -53,7 +59,7 @@
                     Calcula cuántos servicios puedes ofrecer al mes, teniendo en cuenta la temporada y el tiempo que dedicas a tareas como ventas y publicidad.</p>
                 <p class="section__div__p">Si tienes poca experiencia o equipo limitado, deberás hacer más producciones para compensar.</p>
 
-                <span  class="section__div__span">Recuerda considerar:</span>
+                <legend  class="section__div__legend">Recuerda considerar:</legend>
                 <ul  class="section__div__ul">
                     <li>Tiempo de cobertura</li>
                     <li>Tiempo de preproducción</li>
@@ -64,8 +70,8 @@
 
                 <form action=""  class="section__div__form">
                     <legend>Cantidad de producciones mensuales</legend>
-                    <label for="cantidad">
-                        <input type="number" placeholder="Ingresa un número" min="0" id="cantidad" name="cantidad">
+                    <label for="productions">Cantidad: <br> 
+                        <input type="number" placeholder="Ingresa un número" min="0" id="productions" name="productions">
                     </label>
                 </form>
             </div>
@@ -78,26 +84,26 @@
                 <p class="section__div__p">Identifica los gastos que debes amortizar, ya que no forman parte de tus ganancias.</p>
 
                 <form action=""  class="section__div__form">
-                    <legend>Gastos Mensuales</legend>
                     <fieldset>
-                        <label for="impuestos">Ingresa un monto representativo de tus impuestos mensuales:
-                            <input type="number" name="impuestos" id="impuestos" placeholder="Ejemplo: 5000" min="0">
-                        </label>
-                        
-                        <label for="servicios">Servicios (Internet, celular, agua, etc.):
-                            <input type="number" name="servicios" id="servicios" placeholder="Ejemplo: 2000" min="0">
-                        </label>
-                        
-                        <label for="seguros">Seguros:
-                            <input type="number" id="seguros" name="seguros" placeholder="Ejemplo: 1000" min="0">
-                        </label>
-                        
-                        <label for="alquiler">Alquiler o renta:
-                            <input type="number" id="alquiler" name="alquiler" placeholder="Ejemplo: 15000" min="0">
+                        <legend>Gastos Mensuales</legend>
+                        <label for="taxes">Ingresa un monto representativo de tus impuestos mensuales: <br>
+                            <input type="number" name="taxes" id="taxes" placeholder="Ejemplo: 5000" min="0">
                         </label><br>
                         
-                        <label for="otros">Otros gastos:
-                            <input type="number" id="otros" name="otros" placeholder="Ejemplo: 3000" min="0">
+                        <label for="bills">Servicios (Internet, celular, agua, etc.): <br>
+                            <input type="number" name="bills" id="bills" placeholder="Ejemplo: 2000" min="0">
+                        </label><br>
+                        
+                        <label for="insurance">Seguros: <br>
+                            <input type="number" id="insurance" name="insurance" placeholder="Ejemplo: 1000" min="0">
+                        </label><br>
+                        
+                        <label for="rent">Alquiler o renta: <br>
+                            <input type="number" id="rent" name="rent" placeholder="Ejemplo: 15000" min="0">
+                        </label><br>
+                        
+                        <label for="others">Otros gastos: <br>
+                            <input type="number" id="others" name="others" placeholder="Ejemplo: 3000" min="0">
                         </label>
                     </fieldset>
                     
@@ -115,8 +121,8 @@
                     <fieldset>
                         <legend>Fondo para Equipos</legend>
                         <section>
-                            <label for="tiempo-amortizacion">Tiempo de amortización:
-                                <select id="tiempo-amortizacion" name="tiempo-amortizacion">
+                            <label for="amortize">Tiempo de amortización:
+                                <select id="amortize" name="amortize">
                                     <option value="1">1 año</option>
                                     <option value="2">2 años</option>
                                     <option value="3">3 años</option>
@@ -126,32 +132,31 @@
                             </section>
                             </label>
     
-                        <label for="fondo" >¿Cuánto necesitas juntar para el reemplazo?
-                            <input type="number" id="fondo" name="fondo" placeholder="Ejemplo: 15000" min="0">
+                        <label for="pool" >¿Cuánto necesitas juntar para el reemplazo?
+                            <input type="number" id="pool" name="pool" placeholder="Ejemplo: 4000" min="0">
                         </label>
                     </fieldset>
         
                 </form>
             </div>
-            <div  class="section__div">
+            <div  class="section__div section__div--res">
                 <span class="resultado"  class="section__div__span"></span>
 
-                <p  class="section__div__p">Simulas que el trabajo es tu actividad principal, calculas los ingresos anuales, sumas los gastos y divides por la cantidad de trabajos previstos.</p>
                 <p  class="section__div__p">Compara tu precio con el de mercado. Si tienes renombre, puedes cobrar más. Si la demanda es baja o la competencia es alta, ajusta tu estrategia, ya sea reduciendo costos, aumentando trabajo o cambiando el enfoque.</p>
             </div>
         </section>
 
         <section id="fotoproducto"  class="section">
-            <h2  class="section__div__h2">Fotoproducto</h2>
+            <h2  class="section__h2">Fotoproducto</h2>
 
-            <p  class="section__div__p">La fotografía de producto es difícil de cotizar, cada producto tiene sus particularidades: tamaño, brillo, reflejos, transparencias, entre otros. Este formulario te ayudará a organizar los parámetros necesarios.</p>
+            <p  class="section__p">La fotografía de producto es difícil de cotizar, cada producto tiene sus particularidades: tamaño, brillo, reflejos, transparencias, entre otros. Este formulario te ayudará a organizar los parámetros necesarios.</p>
         
             <form  class="section__div__form">
                 <!-- Tiempo -->
                 <label for="tiempo" >
-                    ¿Cuánto tiempo tardas para tres fotos de catálogo sin características especiales (incluyendo retoque)? 
-                    <input type="range" id="tiempo" name="tiempo" min="15" max="120" value="60">
-                    <span id="tiempo-valor">60 minutos</span>
+                    ¿Cuánto tiempo tardas para tres fotos de catálogo sin características especiales (incluyendo retoque)?<br>
+                    <input type="range" id="tiempo" name="tiempo" min="1" max="60" value="15">
+                    <span id="tiempo-valor">15 minutos</span>
                 </label>
         
                 <!-- Tipo de fotografía -->
