@@ -14,10 +14,15 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--color-oscuro);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
 html {
-    font-family: "Spline Sans", sans-serif;
+    font-family: "Spline Sans", Tahoma, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -30,7 +35,7 @@ main {
 }
 
 h1, h3 {
-    font-family: "Tienne", serif;
+    font-family: "Tienne", 'Times New Roman', Times, serif;
     font-weight: bold;
     font-style: normal;
     font-size: 2em;
@@ -53,7 +58,7 @@ option {
     font-size: 1.3em;
     font-weight: bolder;
     text-align: center;
-    color: #1E55D4;
+    color: var(--color-oscuro);
     margin-top: 10px;
     margin-bottom: 30px;
 }
@@ -89,13 +94,13 @@ option {
 .section__div__h3 {
     font-size: 1.5em;
     text-align: center;
-    margin: 10px;
+    margin: 30px 10px;
     text-decoration: underline;
-    color: var(--color-fuerte);
+    color: var(--color-oscuro);
 }
 
 .section__div__p {
-    margin-top: 20px auto;
+    margin: 10px 10px;
     text-align: center;
 }
 
@@ -108,7 +113,7 @@ option {
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
-    margin: 10px;
+    margin: 30px 10px;
 }
 
 .section__div__form  legend, span, label {
@@ -135,6 +140,15 @@ option {
 
 .section__div--res{
     display: none;
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    padding: 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+.section b {
+    color: var(--color-claro);
 }
 
 .section__h2{
@@ -152,4 +166,36 @@ option {
 .section__p {
     text-align: center;
     color: var(--color-oscuro);
+}
+
+.section__div__button {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    background-color: var(--color-fuerte);
+    color: var(--color-claro);
+    padding: 20px 40px;
+    font-size: 1.6em;
+    font-weight: bolder;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); /* Ajusta para centrarlo realmente */
+    border: none;
+    margin-top: 30px;
+}
+
+.section__div__button:hover {
+    padding: 22px 44px;
+    font-size: 1.62em;
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    box-shadow: 2px 2px 3px var(--color-medio);
+}
+
+.section__div__button:active {
+    color: var(--color-fuerte);
+    background-color: var(--color-fuerte);
 }
