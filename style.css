@@ -32,6 +32,15 @@ html {
 
 main {
     margin: 20px;
+    min-width: 350px;
+}
+
+footer{
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1, h3 {
@@ -185,6 +194,7 @@ option {
     transform: translateX(-50%); /* Ajusta para centrarlo realmente */
     border: none;
     margin-top: 30px;
+    box-shadow: 2px 2px 3px var(--color-medio);
 }
 
 .section__div__button:hover {
@@ -192,10 +202,42 @@ option {
     font-size: 1.62em;
     background-color: var(--color-oscuro);
     color: var(--color-claro);
-    box-shadow: 2px 2px 3px var(--color-medio);
+    box-shadow: 3px 3px 4px var(--color-medio);
 }
 
 .section__div__button:active {
-    color: var(--color-fuerte);
     background-color: var(--color-fuerte);
+    box-shadow: 1px 1px 1px var(--color-medio);
+    padding: 20px 40px;
+    font-size: 1.6em;
+}
+
+.section--footer {
+    border: none;
+}
+
+.section__h3{
+    color: var(--color-claro);
+    font-size: 1rem;
+    font-family: "Spline Sans", Tahoma, sans-serif;
+    text-align: left;
+    line-height: 2;
+}
+
+.section__small{
+    font-size: 0.7rem;
+    color: var(--color-claro);
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+.section__a__img {
+    width: 30px;
+    margin: 10px;
+}
+
+.section__a__img:hover {
+    width: 40px;
 }
