@@ -241,3 +241,12 @@ option {
 .section__a__img:hover {
     width: 40px;
 }
+
+.section__a{
+    color: var(--color-resalte);
+    text-decoration: underline;
+}
+
+.section__a:visited{
+    color: var(--color-medio);
+}
